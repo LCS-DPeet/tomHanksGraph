@@ -31,7 +31,7 @@ struct ContentView: View {
                     .foregroundStyle(by: .value("class", className[index]))
                     
                     .annotation {
-                        Text("\(classGrade[index])")
+                        Text("\(classGrade[index].formatted())")
                     }
                 }
         }
